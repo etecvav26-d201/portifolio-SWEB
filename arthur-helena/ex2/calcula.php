@@ -3,19 +3,18 @@
     $temp = $_GET["temp"];
     $resultadotemp = "";
     $resultadoconversao = "";
+    $oposto = "";
 
     if ($temp == "F" || $temp == "f") 
     {
-        $resultadotemp = "A temperatura registrada está em Fahreinheit.";
+        $resultadotemp = "Fahreinheit";
         $resultadoconversao = 5/9*($n1 - 32);
     } 
     else if ($temp =="C" || $temp == "c")
     {
-        $resultadotemp = "A temperatura registrada está em Celsius.";
-        $resultadoconversao = 9/5*($n1 + 32);
+        $resultadotemp = "Celsius";
+        $resultadoconversao = (9/5)*$n1 + 32;
     }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -27,6 +26,8 @@
 
 <body>
 
+    <p>A temperatura registrada está em <?php echo $resultadotemp; ?>, 
+    a conversão para ficaria <?php echo $resultadoconversao; ?></p>
 
 </body>
 
