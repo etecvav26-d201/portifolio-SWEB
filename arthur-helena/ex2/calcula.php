@@ -8,11 +8,13 @@
     if ($temp == "F" || $temp == "f") 
     {
         $resultadotemp = "Fahreinheit";
+        $oposto = "Celsius";
         $resultadoconversao = 5/9*($n1 - 32);
     } 
     else if ($temp =="C" || $temp == "c")
     {
         $resultadotemp = "Celsius";
+        $oposto = "Fahreinheit";
         $resultadoconversao = (9/5)*$n1 + 32;
     }
 ?>
@@ -27,7 +29,7 @@
 <body>
 
     <p>A temperatura registrada está em <?php echo $resultadotemp; ?>, 
-    a conversão para ficaria <?php echo $resultadoconversao; ?></p>
+    a conversão para <?php echo $oposto; ?> ficaria <?php echo $resultadoconversao; ?></p>
 
 </body>
 
