@@ -3,22 +3,25 @@
     $operacao = $_GET["operacao"];
     $n2 = $_GET["n2"];
     $resultado = "";
+    $nomenclatura = "";
 
     if ($operacao == "+") {
         $resultado = $n1+$n2;
+        $nomenclatura = "somado por";
     }
     else if ($operacao == "-") {
         $resultado = $n1-$n2;
+        $nomenclatura = "subtraído por";
     } 
     else if ($operacao == "*") {
         $resultado = $n1*$n2;
-    }if ($operacao == "/") {
+        $nomenclatura = "multiplicado por";
+    }else if ($operacao == "/") {
         $resultado = $n1/$n2;
+        $nomenclatura = "dividido por";
     } else {
-        $resultado = "Caractere invalido para a operação."
+        $resultado = "Inválida, já que possui um caractere inválido para a operação.";
     }
-
-
 ?>
 
 <!DOCTYPE html>
@@ -30,6 +33,10 @@
 
 <body>
 
+    <p> O resultado da operação <?php echo $n1; ?> <?php echo $nomenclatura; ?> 
+    <?php echo $n2; ?> é <?php echo $resultado; ?></p>
+
+    <br><a href="index.php">Voltar</a>
 
 </body>
 

@@ -31,6 +31,8 @@
     <p>A temperatura registrada está em <?php echo $resultadotemp; ?>, 
     a conversão para <?php echo $oposto; ?> ficaria <?php echo $resultadoconversao; ?></p>
 
+    <br><a href="index.php">Voltar</a>
+
 </body>
 
 </html>
