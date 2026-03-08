@@ -2,7 +2,7 @@
     $n1 = $_GET["n1"];
     $resultado = "";
 
-    if ($n1 >=100 || $n1<=200) {
+    if ($n1 >=100 && $n1<=200) {
         $resultado = "está no intervalo entre 100 e 200.";
     } 
     else
