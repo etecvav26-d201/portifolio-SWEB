@@ -14,6 +14,29 @@ Leia 5 números inteiros e mostre a soma dos fatoriais desses números.
 </head>
 <body>
 
-  
+  <form action="calcula.php" method="get">
+    <label>Digite o primeiro número:</label>
+    <input type="number" name="n1" step="any" required>
+    <br><br>
+
+    <label>Digite o segundo número:</label>
+    <input type="number" name="n2" step="any" required>
+    <br><br>
+
+    <label>Digite o terceiro número:</label>
+    <input type="number" name="n3" step="any" required>
+    <br><br>
+
+    <label>Digite o quarto número:</label>
+    <input type="number" name="n4" step="any" required>
+    <br><br>
+
+    <label>Digite o quinto número:</label>
+    <input type="number" name="n5" step="any" required>
+    <br><br>
+
+    <input type="submit" value="Calcular">
+  </form>
+
 </body>
 </html>
