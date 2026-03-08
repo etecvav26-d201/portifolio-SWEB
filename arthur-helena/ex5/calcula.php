@@ -24,9 +24,6 @@
 
         $i++;
     }
-
-    $resultado = "A soma dos fatoriais de cada número é " . $soma;
-
 ?>
 
 <!DOCTYPE html>
@@ -38,7 +35,7 @@
 
 <body>
 
-    <p><?php echo $somafinal; ?></p>
+    <p>A soma dos fatoriais de cada número é de <?php echo $soma; ?></p>
 
     <br><a href="index.php">Voltar</a>
 
