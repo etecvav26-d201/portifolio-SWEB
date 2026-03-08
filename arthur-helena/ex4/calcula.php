@@ -1,9 +1,9 @@
 <?php
-    $n = $_GET["n"];
+    $n1 = $_GET["n1"];
     $resultado = "";
     $i = 1;
         
-    while ($i <= $n) {
+    while ($i <= $n1) {
 
         $j = 1;
 
@@ -27,6 +27,9 @@
 
 <body>
 
+    <p><?php echo $resultado; ?></p>
+
+    <br><a href="index.php">Voltar</a>
    
 </body>
 
