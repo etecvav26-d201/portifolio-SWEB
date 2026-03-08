@@ -15,6 +15,19 @@ Depois, o programa deve converter para a outra unidade.
 </head>
 <body>
 
+    <h1>Conversão de temperatura</h1>
+
+    <form action="calcula.php" method="get">
+        <label>Digite a temperatura:</label>
+        <input type="number" name="n1" step="any" required>
+        <br><br>
+
+        <label>Digite a unidade da temperatura (F ou C):</label>
+        <input type="text" name="temp" maxlength="1" required>
+        <br><br>
+
+        <input type="submit" value="Calcular">
+    </form>
 
 </body>
 </html>
