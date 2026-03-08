@@ -23,7 +23,7 @@
 
     <p>O número <?php echo $n1; ?> <?php echo $resultado; ?>
 
-    <a href="index.php">Voltar</a>
+    <br><a href="index.php">Voltar</a>
 
 </body>
 
