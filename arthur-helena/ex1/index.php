@@ -11,11 +11,19 @@ Faça um programa que receba um número e diga se este número está no interval
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Intervalo entre 100 e 200</title>
 </head>
 <body>
 
-  
+  <h1>Verificar se o número está no intervalo entre 100 e 200.</h1>
+
+  <form action="calcula.php" method="get">
+    <label>Digite um número:</label>
+    <input type="number" name="n1" step="any" required>
+    <br><br>
+
+    <input type="submit" value="Calcular">
+  </form>
 
 </body>
 </html>
