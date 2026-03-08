@@ -1,12 +1,13 @@
 <?php
-    $n1 = $_GET["n1"]
+    $n1 = $_GET["n1"];
+    $resultado = "";
 
     if ($n1 >=100 || $n1<=200) {
-        echo "O número está no intervalo entre 100 e 200."
+        $resultado = "O número está no intervalo entre 100 e 200.";
     } 
     else
     {
-        echo "O número não está em um intervalo entre 100 e 200."
+        $resultado = "O número não está em um intervalo entre 100 e 200.";
     }
 
 ?>
@@ -15,7 +16,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Resultado</title>
 </head>
 
 <body>
