@@ -17,10 +17,19 @@ Leia um número n e imprima n linhas no seguinte formato (exemplo para n = 6):
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Triângulo Numérico</title>
 </head>
 <body>
 
+    <h1>Triângulo Numérico</h1>
+
+    <form action="calcula.php" method="get">
+        <label>Digite um número para o triângulo númerico:</label>
+        <input type="number" name="n1" step="any" required>
+        <br><br>
+
+        <input type="submit" value="Calcular">
+    </form>
 
 </body>
 </html>
