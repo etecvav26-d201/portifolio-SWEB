@@ -3,11 +3,11 @@
     $resultado = "";
 
     if ($n1 >=100 || $n1<=200) {
-        $resultado = "O número está no intervalo entre 100 e 200.";
+        $resultado = "está no intervalo entre 100 e 200.";
     } 
     else
     {
-        $resultado = "O número não está em um intervalo entre 100 e 200.";
+        $resultado = "não está em um intervalo entre 100 e 200.";
     }
 
 ?>
@@ -21,6 +21,9 @@
 
 <body>
 
+    <p>O número <?php echo $n1; ?> <?php echo $resultado; ?>
+
+    <a href="index.php">Voltar</a>
 
 </body>
 
