@@ -16,11 +16,19 @@ Resultado:
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title></title>
+  <title>Série de Fibonacci</title>
 </head>
 <body>
 
+    <h1>Série de Fibonacci</h1>
 
+    <form action="calcula.php" method="get">
+    <label>Digite um número:</label>
+    <input type="number" name="n1" step="any" required>
+    <br><br>
+
+    <input type="submit" value="Calcular">
+    </form>
 
 </body>
 </html>
