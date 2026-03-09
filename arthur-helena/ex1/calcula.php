@@ -21,7 +21,7 @@
 
 <body>
 
-    <p>O número <?php echo $n1; ?> <?php echo $resultado; ?>
+    <p>O número <?php echo $n1; ?> <?php echo $resultado; ?></p>
 
     <br><a href="index.php">Voltar</a>
 
