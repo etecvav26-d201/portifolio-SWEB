@@ -5,7 +5,7 @@
     $b = 1;
     $i = 0;
 
-    while ($i < $n) {
+    while ($i < $n1) {
         $resultado .= $a . " ";
         $temp = $a + $b;
         $a = $b;
