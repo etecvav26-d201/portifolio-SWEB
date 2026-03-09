@@ -22,7 +22,7 @@ ou
     <h1>Ano Bissexto</h1>
 
     <form action="calcula.php" method="get">
-        <label>Informe um número:</label>
+        <label>Informe um ano:</label>
         <input type="number" name="ano" step="any" required>
         <br><br>
 
