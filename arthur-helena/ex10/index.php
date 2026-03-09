@@ -23,7 +23,7 @@ ou
 
     <form action="calcula.php" method="get">
         <label>Informe um número:</label>
-        <input type="number" name="n1" step="any" required>
+        <input type="number" name="ano" step="any" required>
         <br><br>
 
         <input type="submit" value="Calcular">
