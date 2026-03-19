@@ -37,5 +37,8 @@
         <?php echo $valor2; ?> é <?php echo $resultado; ?>.
     </p>
 
+    <br>
+    <a href="index.php">Voltar</a>
+
 </body>
 </html>
