@@ -27,6 +27,8 @@
 
     <p><?php echo $saida; ?></p>
 
+    <br>
+    <a href="index.php">Voltar</a>
    
 </body>
 </html>
