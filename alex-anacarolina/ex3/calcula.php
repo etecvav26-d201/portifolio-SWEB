@@ -23,3 +23,19 @@
         $descricao = "dividido por";
     }
 ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado do Cálculo</title>
+</head>
+
+<body>
+
+    <p>
+        O resultado de <?php echo $valor1; ?> <?php echo $descricao; ?> 
+        <?php echo $valor2; ?> é <?php echo $resultado; ?>.
+    </p>
+
+</body>
+</html>
