@@ -19,3 +19,20 @@
         $valorConvertido = (9/5) * $valor + 32;
     }
 ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Conversão de Temperatura</title>
+</head>
+
+<body>
+
+    <p>
+        A temperatura informada está em <?php echo $escalaAtual; ?>.
+        Convertendo para <?php echo $escalaConvertida; ?> o valor será
+        <?php echo $valorConvertido; ?>.
+    </p>
+
+</body>
+</html>
