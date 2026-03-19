@@ -26,3 +26,16 @@
         $indice++;
     }
 ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Soma dos Fatoriais</title>
+</head>
+
+<body>
+
+    <p>A soma dos fatoriais dos números informados é: <?php echo $totalSoma; ?></p>
+
+</body>
+</html>
