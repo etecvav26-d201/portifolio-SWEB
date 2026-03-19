@@ -34,5 +34,8 @@
         <?php echo $valorConvertido; ?>.
     </p>
 
+    <br>
+    <a href="index.php">Voltar</a>
+
 </body>
 </html>
