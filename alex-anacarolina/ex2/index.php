@@ -17,5 +17,21 @@ indicando a unidade. Em seguida, realizar a conversão para a outra escala.
 
     <h1>Conversor de Temperaturas</h1>
 
+    <form action="calcula.php" method="get">
+
+        <label for="tempValor">Informe a temperatura:</label>
+        <input type="number" id="tempValor" name="n1" step="any" required>
+        
+        <br><br>
+
+        <label for="tipoTemp">Informe a unidade (F ou C):</label>
+        <input type="text" id="tipoTemp" name="temp" maxlength="1" required>
+        
+        <br><br>
+
+        <input type="submit" value="Converter">
+
+    </form>
+
 </body>
 </html>
