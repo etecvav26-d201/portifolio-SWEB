@@ -26,5 +26,16 @@ Exemplo para n = 6:
 
     <h1>Gerador de Triângulo Numérico</h1>
 
+    <form action="calcula.php" method="get">
+
+        <label for="numero">Informe um número para gerar o triângulo:</label>
+        <input type="number" id="numero" name="n1" step="1" required>
+
+        <br><br>
+
+        <input type="submit" value="Gerar Triângulo">
+
+    </form>
+
 </body>
 </html>
