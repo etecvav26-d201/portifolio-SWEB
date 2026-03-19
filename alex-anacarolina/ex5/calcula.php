@@ -20,5 +20,9 @@
             $fatorial *= $contador;
             $contador--;
         }
+        
+        $totalSoma += $fatorial;
+
+        $indice++;
     }
 ?>
