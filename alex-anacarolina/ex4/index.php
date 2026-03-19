@@ -16,3 +16,15 @@ Exemplo para n = 6:
 1 2 3 4 5
 1 2 3 4 5 6
 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerador de Triângulo Numérico</title>
+</head>
+<body>
+
+    <h1>Gerador de Triângulo Numérico</h1>
+
+</body>
+</html>
