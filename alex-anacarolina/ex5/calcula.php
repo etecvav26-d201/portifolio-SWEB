@@ -36,6 +36,9 @@
 <body>
 
     <p>A soma dos fatoriais dos números informados é: <?php echo $totalSoma; ?></p>
+    
+    <br>
+    <a href="index.php">Voltar</a>
 
 </body>
 </html>
