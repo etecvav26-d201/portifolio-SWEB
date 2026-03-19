@@ -16,3 +16,17 @@
         $linha++;
     }
 ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exibição do Resultado</title>
+</head>
+
+<body>
+
+    <p><?php echo $saida; ?></p>
+
+   
+</body>
+</html>
