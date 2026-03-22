@@ -1,25 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Soma com PHP (GET)</title>
-</head>
-<body>
+<!--
+Data: 09/03/2026
+Autor: Alex dos Santos Apolinario, Ana Carolina Bernal Santos
+Objetivo:
 
-  <h1>Soma de dois números (GET)</h1>
+Exercício 6 - Série de Fibonacci
+Leia um número n e mostre os n primeiros termos da sequência de Fibonacci.
 
-  <form action="calcula.php" method="get">
-    <label>Primeiro número:</label>
-    <input type="number" name="n1" step="any" required>
-    <br><br>
-
-    <label>Segundo número:</label>
-    <input type="number" name="n2" step="any" required>
-    <br><br>
-
-    <input type="submit" value="Calcular soma">
-  </form>
-
-</body>
-</html>
+Exemplo:
+n = 12
+Resultado:
+0 1 1 2 3 5 8 13 21 34 55 89
+-->
 
