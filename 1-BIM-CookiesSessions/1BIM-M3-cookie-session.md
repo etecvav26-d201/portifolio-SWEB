@@ -29,3 +29,4 @@ Os Cookies e Sessions no PHP são sistemas que armazenam informações do usuár
 ---
 
 ## Exercício 2 - Pergunta de aplicação
+Para uma loja virtual, pode ser utilizado ambos os Cookies como as Sessions para compor a funcionalidade e a segurança do site, para manter o usuário logado e armazenar itens no carrinho seriam utilizado as sessions, para que quando o usuário realizasse login, o servidor criaria uma sessão com as informações com o ID do usuário, e então no navegador ficando armazenado apenas o Cookie do identificador da sessão, de modo que os dados não conseguissem serem facilmente acessados.
