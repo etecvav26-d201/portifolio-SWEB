@@ -20,3 +20,7 @@
 - `Helena Bianquini Carriço`
 
 ---
+
+# Exercícios
+
+## Exercício 1 - Pergunta conceitual - Explique a diferença entre cookies e sessions no PHP
