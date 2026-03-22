@@ -36,6 +36,8 @@ Para uma loja virtual, pode ser utilizado ambos os Cookies como as Sessions para
 ## Exercício 3 - Pergunta de investigação
 Quando aberto o arquivo pela primeira vez, a mensagem que apareceu foi “Cookie ainda não disponível.”, e então quando reiniciei o Site, a mensagem exibida foi "Valor do Cookie: 1", para depois quando limpado os Cookies do site, voltar a mensagem inicial de Cookies ainda não disponíveis. Na primeira vez que entrei no Site, isso aconteceu porque "setcookie()" apenas envia o Cookie para o navegador, mas não sendo devolvido para o servidor imediatamente, então é por isso que quando atualizado a pagina, o navegador já possuia o acesso aos Cookies, mudando a mensagem para "Valor do Cookie: 1", já que primeiro o servidor envia o Cookie, e depois o navegador guarda ele.
 
+![Imagem do Site php](exercicio3/cookies.png)
+
 ---
 
 ## Exercício 4 — Pergunta de reflexão
