@@ -17,11 +17,10 @@ Crie uma função soma(n) que receba um número inteiro e retorne a soma de 0 at
     <h1>Soma de 0 até N com função</h1>
 
     <form action="calcula.php" method="get">
-    <label>Digite um número:</label>
-    <input type="number" name="n" step="any" required>
-    <br><br>
-
-    <input type="submit" value="Calcular">
+        <label>Digite um número:</label>
+        <input type="number" name="n" step="any" required>
+        <br><br>
+        <input type="submit" value="Calcular">
     </form>
 
 </body>
