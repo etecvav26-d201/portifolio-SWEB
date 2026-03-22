@@ -39,4 +39,4 @@ Quando aberto o arquivo pela primeira vez, a mensagem que apareceu foi “Cookie
 ---
 
 ## Exercício 4 — Pergunta de reflexão
-As sessions são mais utilizadas para a autentificação de usuários porque oferecem justamente mais segurança do que os cookies, já que nas sessions os dados ficam guardados dentro do servidor, e não no navegador
+As sessions são mais utilizadas para a autentificação de usuários porque oferecem justamente mais segurança do que os cookies, já que nas sessions os dados ficam guardados dentro do servidor, e não no navegador, reduzindo o risco de exposição a dados como senhas, emails e etc, já que nos cookies a informação poderia ser facilmente acessada e modificadas pelo usuário ou por hackers, diferentemente das sessions, em que os dados ficam no servidor, sendo menor o risco de exposição desses dados
