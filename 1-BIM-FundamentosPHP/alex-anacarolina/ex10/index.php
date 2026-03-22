@@ -11,3 +11,23 @@ Um ano é bissexto se:
 ou
 É múltiplo de 4 e não é múltiplo de 100
 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Ano Bissexto</title>
+</head>
+<body>
+
+    <h1>Calcular se o ano é bissexto</h1>
+
+    <form action="calcula.php" method="get">
+        <label>Informe o ano:</label>
+        <input type="number" name="n" step="any" required>
+        <br><br>
+
+        <input type="submit" value="Calcular">
+    </form>
+
+</body>
+</html>
