@@ -19,12 +19,13 @@ Que receba uma lista de números reais e retorne a média aritmética.
 
     <h1>Média Aritmética com Função</h1>
 
-    <form action="calcula.php" method="get">
-        <label>Digite um número real:</label>
-        <input type="number" name="n1" step="any" required>
+    <form method="get" action="calcula.php">
+        <input type="number" name="valores[]">
+        <input type="number" name="valores[]">
+        <input type="number" name="valores[]">
         <br><br>
 
-        <input type="submit" value="Calcular">
+        <button type="submit">Calcular</button>
     </form>
 
 </body>
