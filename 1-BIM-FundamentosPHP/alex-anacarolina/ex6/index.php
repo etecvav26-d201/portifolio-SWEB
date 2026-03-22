@@ -22,11 +22,11 @@ Resultado:
     <h1>Fibonacci</h1>
 
     <form action="calcula.php" method="get">
-    <label>Digite o número:</label>
-    <input type="number" name="n" step="any" required>
-    <br><br>
+      <label>Digite o número:</label>
+      <input type="number" name="n" step="any" required>
+      <br><br>
 
-    <input type="submit" value="Calcular">
+      <input type="submit" value="Calcular">
     </form>
 
 </body>
