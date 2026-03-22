@@ -13,3 +13,19 @@
         $i++;
     }
 ?>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcula</title>
+</head>
+
+<body>
+
+    <p>A série de fibonacci seria <?php echo $resultado; ?></p>
+
+    <br><a href="index.php">Voltar</a>
+
+</body>
+
+</html>
