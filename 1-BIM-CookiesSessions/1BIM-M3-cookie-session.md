@@ -33,14 +33,14 @@ Os Cookies e Sessions no PHP são sistemas que armazenam informações do usuár
 ## Exercício 2 - Pergunta de aplicação
 Para uma loja virtual, pode ser utilizado ambos os Cookies como as Sessions para compor a funcionalidade e a segurança do site, para manter o usuário logado e armazenar itens no carrinho seriam utilizado as sessions, para que quando o usuário realizasse login, o servidor criaria uma sessão com as informações com o ID do usuário, e então no navegador ficando armazenado apenas o Cookie do identificador da sessão, de modo que os dados não conseguissem serem facilmente acessados. Para as preferências do usuário, seriam utilizado os Cookies, já que são informações que não são sensíveis e precisam continuar no site mesmo após fecharmos ele, sem necessidade também de armazenar em um servidor esses dados.
 
-![Imagem dos cookies](./exercicio3/cokiessesions.png)
+![Imagem dos cookies](./Exercicio3/cokiessesions.png)
 
 ---
 
 ## Exercício 3 - Pergunta de investigação
 Quando aberto o arquivo pela primeira vez, a mensagem que apareceu foi “Cookie ainda não disponível.”, e então quando reiniciei o Site, a mensagem exibida foi "Valor do Cookie: 1", para depois quando limpado os Cookies do site, voltar a mensagem inicial de Cookies ainda não disponíveis. Na primeira vez que entrei no Site, isso aconteceu porque "setcookie()" apenas envia o Cookie para o navegador, mas não sendo devolvido para o servidor imediatamente, então é por isso que quando atualizado a pagina, o navegador já possuia o acesso aos Cookies, mudando a mensagem para "Valor do Cookie: 1", já que primeiro o servidor envia o Cookie, e depois o navegador guarda ele.
 
-![Imagem do Site php](./exercicio3/cookies.png)
+![Imagem do Site php](./Exercicio3/cookies.png)
 
 ---
 
