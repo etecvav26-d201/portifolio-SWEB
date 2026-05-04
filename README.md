@@ -1,7 +1,5 @@
 # Portifólio de Sistemas WEB - D201
 
-Bem-vindo ao repositório **Portifólio de Sistemas WEB**! 🚀  
-
 Este repositório reúne diversos **projetos e exercícios práticos de desenvolvimento web**, criados com o 
 objetivo de **aprender, praticar e demonstrar conhecimentos em tecnologias modernas de desenvolvimento**.
 
