@@ -1,4 +1,4 @@
-# 🌐 Portifólio de Sistemas WEB - D201
+# Portifólio de Sistemas WEB - D201
 
 Bem-vindo ao repositório **Portifólio de Sistemas WEB**! 🚀  
 
@@ -19,7 +19,7 @@ O objetivo deste repositório é:
 
 ---
 
-# 👨‍💻 Alunos Desenvolvedores
+# Alunos Desenvolvedores
 
 Este projeto foi desenvolvido pelos seguintes alunos:
 
@@ -30,7 +30,7 @@ Este projeto foi desenvolvido pelos seguintes alunos:
 
 ---
 
-# 🧰 Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 Os projetos deste repositório utilizam diversas tecnologias do ecossistema web:
 
@@ -52,7 +52,7 @@ Os projetos deste repositório utilizam diversas tecnologias do ecossistema web:
 
 ---
 
-# 📂 Conteúdo do Repositório
+# Conteúdo do Repositório
 
 Atualmente, o repositório contém:
 
@@ -69,7 +69,7 @@ explorar diferentes conceitos do desenvolvimento web.
 
 ---
 
-# 🎯 Objetivo do Projeto
+# Objetivo do Projeto
 
 O objetivo principal deste portfólio é **consolidar o aprendizado em desenvolvimento de sistemas web**, reunindo 
 projetos que demonstram:
@@ -85,7 +85,7 @@ Além disso, o repositório funciona como uma **base de referência para estudos
 
 ---
 
-# 🚀 Evolução do Repositório
+# Evolução do Repositório
 
 Este portfólio está **em constante crescimento**.  
 Novos projetos, melhorias e tecnologias serão adicionados conforme o avanço dos estudos e do desenvolvimento das aplicações.
