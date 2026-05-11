@@ -54,5 +54,50 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <h1>Editar Produto</h1>
 
+    <form method="POST">
+
+        <label>Nome:</label>
+
+        <input 
+            type="text"
+            name="nome"
+            value="<?php echo $produto['nome']; ?>"
+            required
+        >
+
+        <label>Fabricante:</label>
+
+        <input 
+            type="text"
+            name="fabricante"
+            value="<?php echo $produto['fabricante']; ?>"
+            required
+        >
+
+        <label>Preço:</label>
+
+        <input 
+            type="number"
+            step="0.01"
+            name="preco"
+            value="<?php echo $produto['preco']; ?>"
+            required
+        >
+
+        <label>Estoque:</label>
+
+        <input 
+            type="number"
+            name="estoque"
+            value="<?php echo $produto['estoque']; ?>"
+            required
+        >
+
+        <button type="submit">
+            Salvar Alterações
+        </button>
+
+    </form>
+
 </body>
 </html>
