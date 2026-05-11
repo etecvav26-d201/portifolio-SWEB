@@ -19,7 +19,30 @@
 </head>
 <body>
 
+    <h1>Listagem</h1>
 
+    <?php foreach($produtos as $produto){ ?>
+
+        <h2>
+            <?php echo $produto['nome']; ?>
+        </h2>
+
+        <p>
+            <strong>Fabricante:</strong>
+            <?php echo $produto['fabricante']; ?>
+        </p>
+
+        <p>
+            <strong>Preço:</strong>
+            R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?>
+        </p>
+
+        <p>
+            <strong>Estoque:</strong>
+            <?php echo $produto['estoque']; ?>
+        </p>
+
+    <?php } ?>
 
 </body>
 </html>
