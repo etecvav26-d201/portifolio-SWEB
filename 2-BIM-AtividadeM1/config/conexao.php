@@ -1,7 +1,7 @@
 <?php
 
     $host = "localhost";
-    $banco = "farmacia_vav";
+    $banco = "foxfarma";
     $usuario = "root";
     $senha = "";
 
