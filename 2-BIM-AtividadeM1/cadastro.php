@@ -39,5 +39,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <h1>Cadastro Teste</h1>
 
+    <form method="POST">
+
+        <label>Nome:</label>
+        <input type="text" name="nome" required><br><br>
+
+        <label>Fabricante:</label>
+        <input type="text" name="fabricante" required><br><br>
+
+        <label>Preço:</label>
+        <input type="number" step="0.01" name="preco" required><br><br>
+
+        <label>Estoque:</label>
+        <input type="number" name="estoque" required><br><br>
+
+        <button type="submit">Cadastrar</button>
+
+    </form>
+
 </body>
 </html>
