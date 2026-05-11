@@ -44,5 +44,9 @@
 
     <?php } ?>
 
+    <a href="cadastro.php" class="botao">
+        Cadastrar Produto
+    </a>
+
 </body>
 </html>
