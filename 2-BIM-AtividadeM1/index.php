@@ -48,5 +48,9 @@
         Cadastrar Produto
     </a>
 
+    <a href="editar.php?id=<?php echo $produto['id']; ?>" class="editar">Editar</a>
+
+    <a href="excluir.php?id=<?php echo $produto['id']; ?>" class="excluir">Excluir</a>
+
 </body>
 </html>
