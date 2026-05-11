@@ -27,3 +27,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 ?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Teste</title>
+</head>
+<body>
+
+    <h1>Cadastro Teste</h1>
+
+</body>
+</html>
