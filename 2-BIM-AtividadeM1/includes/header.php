@@ -11,5 +11,7 @@
 <body>
 
 <header>
-    <img src="img/logo.png" alt="Logo da Farmácia VAV" class="logo">
+    <a href="./index.php">
+        <img src="img/logo.png" alt="Logo da Farmácia VAV" class="logo">
+    </a>
 </header>
