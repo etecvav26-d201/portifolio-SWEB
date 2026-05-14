@@ -1,56 +1,85 @@
 <?php
 
-    require_once 'config/conexao.php';
+require_once 'config/conexao.php';
 
-    $sql = "SELECT * FROM produtos ORDER BY id DESC";
+$sql = "SELECT * FROM produtos ORDER BY id DESC";
 
-    $resultado = $conexao->query($sql);
+$resultado = $conexao->query($sql);
 
-    $produtos = $resultado->fetchAll(PDO::FETCH_ASSOC);
+$produtos = $resultado->fetchAll(PDO::FETCH_ASSOC);
+
+require_once 'includes/header.php';
 
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listagem dos produtos</title>
-</head>
-<body>
+<main>
 
-    <h1>Listagem</h1>
 
-    <?php foreach($produtos as $produto){ ?>
+    <div class="acoes-topo">
 
-        <h2>
-            <?php echo $produto['nome']; ?>
-        </h2>
+        <a href="cadastro.php" class="btn botao-cadastro">
+            Cadastrar Produto
+        </a>
 
-        <p>
-            <strong>Fabricante:</strong>
-            <?php echo $produto['fabricante']; ?>
-        </p>
+    </div>
 
-        <p>
-            <strong>Preço:</strong>
-            R$ <?php echo number_format($produto['preco'], 2, ',', '.'); ?>
-        </p>
+    <section class="cards">
 
-        <p>
-            <strong>Estoque:</strong>
-            <?php echo $produto['estoque']; ?>
-        </p>
+        <?php foreach($produtos as $produto){ ?>
 
-        <a href="editar.php?id=<?php echo $produto['id']; ?>" class="editar">Editar</a>
+            <div class="card">
 
-        <a href="excluir.php?id=<?php echo $produto['id']; ?>" class="excluir">Excluir</a>
+                <h2>
+                    <?php echo $produto['nome']; ?>
+                </h2>
 
-    <?php } ?>
+                <p>
 
-    <a href="cadastro.php" class="botao">
-        Cadastrar Produto
-    </a>
+                    <strong>Fabricante:</strong>
 
-</body>
-</html>
+                    <?php echo $produto['fabricante']; ?>
+
+                </p>
+
+                <p>
+
+                    <strong>Preço:</strong>
+
+                    R$
+                    <?php echo number_format($produto['preco'], 2, ',', '.'); ?>
+
+                </p>
+
+                <p>
+
+                    <strong>Estoque:</strong>
+
+                    <?php echo $produto['estoque']; ?>
+
+                </p>
+
+                <br>
+
+                <a
+                    href="editar.php?id=<?php echo $produto['id']; ?>"
+                    class="btn"
+                >
+                    Editar
+                </a>
+
+                <a
+                    href="excluir.php?id=<?php echo $produto['id']; ?>"
+                    class="btn excluir"
+                >
+                    Excluir
+                </a>
+
+            </div>
+
+        <?php } ?>
+
+    </section>
+
+</main>
+
+<?php require_once 'includes/footer.php'; ?>

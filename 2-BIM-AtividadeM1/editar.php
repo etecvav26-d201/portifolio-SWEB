@@ -14,7 +14,6 @@ $comando->execute([
 
 $produto = $comando->fetch(PDO::FETCH_ASSOC);
 
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $nome = $_POST['nome'];
@@ -42,66 +41,88 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     header('Location: index.php');
 
     exit();
-
 }
+
+require_once 'includes/header.php';
 
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Produto</title>
-</head>
-<body>
+<main>
 
-    <h1>Editar Produto</h1>
+    <section class="hero">
 
-    <form method="POST">
+        <h1>Editar Produto</h1>
 
-        <label>Nome:</label>
+        <p>
+            Atualize as informações do produto
+            cadastrado no sistema.
+        </p>
 
-        <input 
-            type="text"
-            name="nome"
-            value="<?php echo $produto['nome']; ?>"
-            required
-        >
+    </section>
 
-        <label>Fabricante:</label>
+    <div class="card">
 
-        <input 
-            type="text"
-            name="fabricante"
-            value="<?php echo $produto['fabricante']; ?>"
-            required
-        >
+        <form method="POST">
 
-        <label>Preço:</label>
+            <label for="nome">
+                Nome do Produto
+            </label>
 
-        <input 
-            type="number"
-            step="0.01"
-            name="preco"
-            value="<?php echo $produto['preco']; ?>"
-            required
-        >
+            <input
+                type="text"
+                name="nome"
+                id="nome"
+                value="<?php echo $produto['nome']; ?>"
+                required
+            >
 
-        <label>Estoque:</label>
+            <label for="fabricante">
+                Fabricante
+            </label>
 
-        <input 
-            type="number"
-            name="estoque"
-            value="<?php echo $produto['estoque']; ?>"
-            required
-        >
+            <input
+                type="text"
+                name="fabricante"
+                id="fabricante"
+                value="<?php echo $produto['fabricante']; ?>"
+                required
+            >
 
-        <button type="submit">
-            Salvar Alterações
-        </button>
+            <label for="preco">
+                Preço
+            </label>
 
-    </form>
+            <input
+                type="number"
+                step="0.01"
+                name="preco"
+                id="preco"
+                value="<?php echo $produto['preco']; ?>"
+                required
+            >
 
-</body>
-</html>
+            <label for="estoque">
+                Estoque
+            </label>
+
+            <input
+                type="number"
+                name="estoque"
+                id="estoque"
+                value="<?php echo $produto['estoque']; ?>"
+                required
+            >
+
+            <button type="submit">
+
+                Salvar Alterações
+
+            </button>
+
+        </form>
+
+    </div>
+
+</main>
+
+<?php require_once 'includes/footer.php'; ?>

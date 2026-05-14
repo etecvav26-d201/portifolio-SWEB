@@ -2,6 +2,8 @@
 
 require_once 'config/conexao.php';
 
+$mensagem = '';
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $nome = $_POST['nome'];
@@ -9,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $preco = $_POST['preco'];
     $estoque = $_POST['estoque'];
 
-    $sql = "INSERT INTO produtos 
+    $sql = "INSERT INTO produtos
             (nome, fabricante, preco, estoque)
             VALUES
             (:nome, :fabricante, :preco, :estoque)";
@@ -23,39 +25,99 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         ':estoque' => $estoque
     ]);
 
-    echo "Produto cadastrado com sucesso!";
+    $mensagem = "Produto cadastrado com sucesso!";
 }
+
+require_once 'includes/header.php';
 
 ?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Teste</title>
-</head>
-<body>
+<main>
 
-    <h1>Cadastro Teste</h1>
+    <section class="hero">
 
-    <form method="POST">
+        <h1>Cadastro de Produtos</h1>
 
-        <label>Nome:</label>
-        <input type="text" name="nome" required><br><br>
+        <p>
+            Adicione novos medicamentos e produtos
+            ao sistema da Farmácia VAV.
+        </p>
 
-        <label>Fabricante:</label>
-        <input type="text" name="fabricante" required><br><br>
+    </section>
 
-        <label>Preço:</label>
-        <input type="number" step="0.01" name="preco" required><br><br>
+    <div class="card">
 
-        <label>Estoque:</label>
-        <input type="number" name="estoque" required><br><br>
+        <?php if ($mensagem != '') : ?>
 
-        <button type="submit">Cadastrar</button>
+            <div class="mensagem-sucesso">
 
-    </form>
+                <?php echo $mensagem; ?>
 
-</body>
-</html>
+            </div>
+
+        <?php endif; ?>
+
+        <form method="POST">
+
+            <label for="nome">
+                Nome do Produto
+            </label>
+
+            <input
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Digite o nome do produto"
+                required
+            >
+
+            <label for="fabricante">
+                Fabricante
+            </label>
+
+            <input
+                type="text"
+                name="fabricante"
+                id="fabricante"
+                placeholder="Digite o fabricante"
+                required
+            >
+
+            <label for="preco">
+                Preço
+            </label>
+
+            <input
+                type="number"
+                step="0.01"
+                name="preco"
+                id="preco"
+                placeholder="Digite o preço"
+                required
+            >
+
+            <label for="estoque">
+                Estoque
+            </label>
+
+            <input
+                type="number"
+                name="estoque"
+                id="estoque"
+                placeholder="Quantidade disponível"
+                required
+            >
+
+            <button type="submit">
+
+                Cadastrar Produto
+
+            </button>
+
+        </form>
+
+    </div>
+
+</main>
+
+<?php require_once 'includes/footer.php'; ?>
