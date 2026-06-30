@@ -134,3 +134,42 @@ Transmissão de arquivos em APIs, conversão de imagens para texto e armazenamen
 ### Por que Base64 não é criptografia?
 
 Base64 apenas converte os dados para outro formato. Qualquer pessoa pode recuperar a informação original utilizando Base64 Decode. Portanto, não oferece segurança nem proteção dos dados.
+
+## 5. Criptografia no PHP
+
+### O que é OpenSSL?
+
+OpenSSL é uma biblioteca amplamente utilizada para implementação de recursos de criptografia e comunicação segura.
+
+### Para que serve?
+
+- Criptografar informações;
+- Descriptografar dados;
+- Gerenciar certificados digitais;
+- Implementar conexões HTTPS.
+
+### Principais funções
+
+| Função | Objetivo |
+|----------|----------|
+| openssl_encrypt() | Criptografar dados |
+| openssl_decrypt() | Descriptografar dados |
+| openssl_random_pseudo_bytes() | Gerar dados aleatórios |
+
+## 6. Proteção de Senhas
+
+### Como uma senha deve ser armazenada corretamente?
+
+Utilizando funções de hash seguras, como `password_hash()`, nunca em texto puro.
+
+### Por que nunca devemos salvar senhas em texto puro?
+
+Caso o banco de dados seja comprometido, todas as senhas ficarão visíveis aos invasores.
+
+### O que é Salt?
+
+Salt é uma sequência aleatória adicionada à senha antes da geração do hash, dificultando ataques por tabelas pré-computadas.
+
+### O que torna um algoritmo de hash seguro?
+
+Uso de algoritmos modernos, inclusão automática de salt, alto custo computacional e resistência a ataques de força bruta.
