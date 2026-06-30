@@ -19,6 +19,7 @@ A linguagem PHP disponibiliza diversos recursos para criptografia, geração de 
 codificação de dados e proteção contra vulnerabilidades comuns. Nesta pesquisa serão 
 apresentados os principais conceitos e funções utilizadas para aumentar a segurança 
 de aplicações desenvolvidas em PHP.
+![Seguranca PHP](imagens/phpseguranca.jfif)
 
 ## 1. Segurança em Aplicações Web
 
