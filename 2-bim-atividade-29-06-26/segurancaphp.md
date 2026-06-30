@@ -72,3 +72,65 @@ Conversão de arquivos para Base64 e envio de imagens em APIs.
 | Criptografia | Sim | Proteger dados |
 | Hash | Não | Verificar e armazenar informações |
 | Codificação | Sim | Compatibilidade e transmissão |
+
+## 3. Funções de Hash no PHP
+
+### password_hash()
+
+Função utilizada para gerar hashes seguros de senhas.
+
+**Para que serve?**
+
+Armazenar senhas de forma segura no banco de dados.
+
+**Quando utilizar?**
+
+Durante o cadastro ou alteração de senha de usuários.
+
+### password_verify()
+
+Função responsável por verificar se uma senha corresponde ao hash armazenado.
+
+**Para que serve?**
+
+Validar credenciais durante o login.
+
+**Quando utilizar?**
+
+Durante o processo de autenticação do usuário.
+
+### hash()
+
+Função genérica utilizada para gerar hashes utilizando diversos algoritmos.
+
+**Para que serve?**
+
+Verificação de integridade de dados e arquivos.
+
+**Quando utilizar?**
+
+Quando for necessário gerar hashes SHA-256, SHA-512 e outros algoritmos.
+
+### Algoritmos recomendados atualmente
+
+- Bcrypt;
+- Argon2i;
+- Argon2id.
+
+## 4. Funções de Codificação
+
+### base64_encode()
+
+Converte dados para o formato Base64.
+
+### base64_decode()
+
+Recupera os dados originalmente codificados em Base64.
+
+### Situações de uso
+
+Transmissão de arquivos em APIs, conversão de imagens para texto e armazenamento temporário de dados binários.
+
+### Por que Base64 não é criptografia?
+
+Base64 apenas converte os dados para outro formato. Qualquer pessoa pode recuperar a informação original utilizando Base64 Decode. Portanto, não oferece segurança nem proteção dos dados.
