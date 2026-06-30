@@ -173,3 +173,68 @@ Salt é uma sequência aleatória adicionada à senha antes da geração do hash
 ### O que torna um algoritmo de hash seguro?
 
 Uso de algoritmos modernos, inclusão automática de salt, alto custo computacional e resistência a ataques de força bruta.
+
+## 7. Proteção contra Ataques
+
+### SQL Injection
+
+Ataque que consiste na inserção de comandos SQL maliciosos em formulários ou URLs.
+
+#### Formas de prevenção
+
+- Prepared Statements;
+- PDO;
+- Validação de entradas.
+
+### Cross-Site Scripting (XSS)
+
+Ataque que injeta códigos JavaScript maliciosos em páginas web.
+
+#### Formas de prevenção
+
+- Uso de `htmlspecialchars()`;
+- Sanitização de entradas;
+- Validação de dados.
+
+### Cross-Site Request Forgery (CSRF)
+
+Ataque que força usuários autenticados a executar ações sem autorização.
+
+#### Formas de prevenção
+
+- Tokens CSRF;
+- Verificação de origem das requisições;
+- Sessões protegidas.
+
+## 8. Aplicações Práticas
+
+Esses recursos são utilizados em diversos sistemas modernos.
+
+| Sistema | Importância |
+|----------|----------|
+| Sistemas de Login | Proteção de credenciais |
+| Comércio Eletrônico | Segurança de pagamentos |
+| Internet Banking | Proteção financeira |
+| Redes Sociais | Privacidade dos usuários |
+| Sistemas Escolares | Proteção de dados acadêmicos |
+| Gerenciamento de Usuários | Controle de acesso |
+
+A utilização dessas técnicas reduz significativamente os riscos de vazamento de dados e acessos não autorizados.
+
+## 9. Boas Práticas de Segurança
+
+- Validar todas as entradas do usuário;
+- Utilizar consultas preparadas (Prepared Statements);
+- Utilizar HTTPS;
+- Armazenar senhas com `password_hash()`;
+- Proteger sessões;
+- Limitar tentativas de login;
+- Atualizar regularmente o PHP;
+- Proteger arquivos de configuração;
+- Implementar controle de acesso adequado.
+
+## 10. Conclusão
+
+A segurança em aplicações web é fundamental para proteger informações sensíveis e garantir a confiabilidade dos sistemas. Durante esta pesquisa foi possível compreender a diferença entre criptografia, hash e codificação, além de conhecer os principais recursos disponibilizados pelo PHP para proteção de dados.
+
+Entre os recursos estudados, destaca-se o uso de `password_hash()` e `password_verify()`, que oferecem uma maneira segura de armazenar e validar senhas. O grupo também adquiriu conhecimentos sobre prevenção de ataques, boas práticas de desenvolvimento seguro e utilização da biblioteca OpenSSL para criptografia de informações.
