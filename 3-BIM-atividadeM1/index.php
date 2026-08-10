@@ -10,10 +10,9 @@
 
     <body>
 
-        <header>
-            <h1>Criptografia no PHP</h1>
-            <p>Conheça e teste diferentes métodos de segurança disponíveis no PHP.</p>
-        </header>
+    <header>
+        <img src="imagemlogo.png" alt="Logo">
+    </header>
 
         <main>
 

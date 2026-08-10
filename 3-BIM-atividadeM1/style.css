@@ -11,18 +11,19 @@ body {
 }
 
 
-/*HEADER*/
-
+/* HEADER */
 header {
-    background: #00070E;
+    background: #010207;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 50px 20px;
 }
 
-header h1 {
-    margin: 0 0 10px;
-    font-size: 38px;
+header img {
+    width: 550px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
 }
 
 header p {
@@ -72,7 +73,7 @@ main {
 }
 
 .card:hover {
-    background: #000203;
+    background: #04121a;
 }
 
 .card h2 {
