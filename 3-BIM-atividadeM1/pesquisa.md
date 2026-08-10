@@ -33,3 +33,34 @@ $hash = md5('texto');
 O MD5 é considerado **inseguro para aplicações que exigem proteção criptográfica**, principalmente para senhas, devido às vulnerabilidades conhecidas.
 
 No site, seu uso pode ser demonstrado para fins didáticos e de comparação com algoritmos mais modernos.
+
+## 3. SHA-256
+
+O **SHA-256** pertence à família SHA-2 e gera um hash de 256 bits.
+
+No PHP:
+
+```php
+$hash = hash('sha256', 'texto');
+```
+
+É mais seguro que o MD5 e pode ser utilizado em situações como verificação de integridade de dados.
+
+Porém, não é recomendado utilizar SHA-256 diretamente para armazenar senhas, pois seu processamento é muito rápido para essa finalidade.
+
+## 4. SHA-512
+
+O **SHA-512** também pertence à família SHA-2 e produz um hash de 512 bits.
+
+No PHP:
+
+```php
+$hash = hash('sha512', 'texto');
+```
+
+Assim como o SHA-256, o SHA-512 é uma função de hash e não permite recuperar diretamente o conteúdo original.
+
+Pode ser utilizado em aplicações de integridade e outras funções criptográficas, mas não deve ser utilizado sozinho para armazenamento de senhas.
+
+
+
