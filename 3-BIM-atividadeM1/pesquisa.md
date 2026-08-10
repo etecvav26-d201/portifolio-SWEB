@@ -19,3 +19,17 @@ $descriptografado = openssl_decrypt($criptografado, 'AES-256-CBC', $chave, 0, $i
 ```
 
 No site desenvolvido, o AES serve como exemplo de proteção de informações que precisam ser recuperadas posteriormente.
+
+## 2. MD5
+
+O **MD5 (Message-Digest Algorithm 5)** é uma função de hash que gera um valor de 128 bits.
+
+No PHP:
+
+```php
+$hash = md5('texto');
+```
+
+O MD5 é considerado **inseguro para aplicações que exigem proteção criptográfica**, principalmente para senhas, devido às vulnerabilidades conhecidas.
+
+No site, seu uso pode ser demonstrado para fins didáticos e de comparação com algoritmos mais modernos.
