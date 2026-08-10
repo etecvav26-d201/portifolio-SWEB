@@ -60,6 +60,46 @@ $hash = hash('sha512', 'texto');
 
 Assim como o SHA-256, o SHA-512 é uma função de hash e não permite recuperar diretamente o conteúdo original.
 
+## 5. password_hash()
+
+O `password_hash()` é a opção recomendada pelo PHP para armazenar senhas de forma segura.
+
+```php
+$senha = 'minha_senha';
+
+$hash = password_hash($senha, PASSWORD_DEFAULT);
+```
+
+A função utiliza um algoritmo apropriado para senhas e gera automaticamente um **salt**, dificultando ataques que utilizam hashes previamente calculados.
+
+Para verificar uma senha armazenada:
+
+```php
+if (password_verify($senha, $hash)) {
+    echo 'Senha correta';
+}
+```
+
+Entre os métodos apresentados no site, essa é a alternativa mais adequada para o armazenamento de senhas.
+
+## Comparação
+
+| Método          | Tipo          | Recupera o original? | Principal utilização                    |
+| --------------- | ------------- | -------------------- | --------------------------------------- |
+| AES             | Criptografia  | Sim, com a chave     | Proteção de dados recuperáveis          |
+| MD5             | Hash          | Não                  | Exemplos e sistemas antigos             |
+| SHA-256         | Hash          | Não                  | Integridade e aplicações criptográficas |
+| SHA-512         | Hash          | Não                  | Integridade e aplicações criptográficas |
+| password_hash() | Hash de senha | Não                  | Armazenamento de senhas                 |
+
+## Conclusão
+
+Os métodos apresentados possuem finalidades diferentes. O **AES** deve ser utilizado quando existe a necessidade de criptografar e posteriormente recuperar uma informação. **MD5, SHA-256 e SHA-512** são funções de hash e, portanto, não foram projetadas para descriptografar os dados.
+
+Para senhas, o método mais apropriado entre os apresentados é o **`password_hash()`**, utilizado em conjunto com **`password_verify()`**.
+
+O site desenvolvido utiliza esses métodos como exemplos práticos, permitindo visualizar as diferenças entre criptografia e hash dentro do PHP.
+
 Pode ser utilizado em aplicações de integridade e outras funções criptográficas, mas não deve ser utilizado sozinho para armazenamento de senhas.
 
 
